@@ -1,13 +1,19 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+    font-family: 'galanogrotesque-m';
+    src: local('galanogrotesque-m'), url(./fonts/galanogrotesque/galanogrotesque-medium.otf) format('woff');
+}
+   
+@font-face {
+    font-family: 'galanogrotesque-r';
+    src: local('galanogrotesque-r'), url(./fonts/galanogrotesque/galanogrotesque-regular.otf) format('woff');
+}
+
+@font-face {
+    font-family: 'galanogrotesque-s';
+    src: local('galanogrotesque-s'), url(./fonts/galanogrotesque/galanogrotesque-semibold.otf) format('woff');
 }
