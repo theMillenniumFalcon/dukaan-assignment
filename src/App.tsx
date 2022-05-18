@@ -1,32 +1,18 @@
-import React from 'react';
-import styled from 'styled-components'
-
-const Component1 = styled.div`
-font-family: galanogrotesque-m;
-`;
-
-const Component2 = styled.div`
-font-family: galanogrotesque-r;
-`;
-
-const Component3 = styled.div`
-font-family: galanogrotesque-s;
-`;
+import { Footer } from './components/footer/Footer';
+import { FreeProductsSection } from './components/freeproductssection/FreeProductsSection';
+import { SloganSection } from './components/slogansection/SloganSection';
+import { ThreeOptionSection } from './components/threeoptionsection/ThreeOptionSection';
+import { TopSection } from './components/topsection/TopSection';
 
 function App() {
   return (
     <>
-      <Component1>
-        Hello
-      </Component1>
-      <Component2>
-        Hello
-      </Component2>
-      <Component3>
-        Hello
-      </Component3>
+      <TopSection />
+      <SloganSection />
+      <ThreeOptionSection />
+      <FreeProductsSection />
+      <Footer />
     </>
-
   );
 }
 
