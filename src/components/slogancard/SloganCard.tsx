@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components"
+import { SloganDisplay } from "../slogandisplay/SloganDisplay";
 import { SloganSectionHeader } from "../slogansectionHeader/SloganSectionHeader";
 import { Wrapper } from "../wrapper/Wrapper";
 
@@ -19,6 +20,7 @@ export const SloganCard: React.FC<SloganCardProps> = () => {
         <Wrapper>
             <SloganSectionComponent>
                 <SloganSectionHeader />
+                <SloganDisplay />
             </SloganSectionComponent>
         </Wrapper>
     )

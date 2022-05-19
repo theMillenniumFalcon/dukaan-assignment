@@ -14,13 +14,17 @@ color: rgba(77, 77, 77, 1);
 
 const Input = styled.div`
 margin-top: 0.5em;
+position: relative;
 input {
     height: 30px;
     width: 250px;
     font-family: galanogrotesque-r;
+    border: 1px solid #D9D9D9;
     border-radius: 4px;
-    border-color: rgba(217, 217, 217, 1);
     outline: none;
+}
+img {
+    position: absolute;
 }
 `;
 
@@ -32,6 +36,7 @@ export const SloganInput: React.FC<SloganInputProps> = () => {
             </Heading>
             <Input>
                 <input type="text" defaultValue="cozy" />
+                <img src="assets/icons/cross.svg" alt="" />
             </Input>
         </SloganInputComponent>
     )
