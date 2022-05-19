@@ -12,18 +12,18 @@ background-color: #ffffff;
 const Heading = styled.div`
 font-family: galanogrotesque-s;
 font-size: 28px;
-margin-top: 2.5em;
+padding-top: 2.5em;
 `;
 
 export const FreeProductsSection: React.FC<FreeProductsSectionProps> = () => {
     return (
-        <Wrapper>
-            <FreeProductsSectionComponent>
-            <Heading>
-                {" Try our other free products"}
-            </Heading>
-            <ProductCards />
+        <FreeProductsSectionComponent>
+            <Wrapper>
+                <Heading>
+                    {" Try our other free products"}
+                </Heading>
+                <ProductCards />
+            </Wrapper>
         </FreeProductsSectionComponent>
-        </Wrapper>
     )
 }

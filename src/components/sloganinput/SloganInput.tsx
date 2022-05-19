@@ -14,17 +14,25 @@ color: rgba(77, 77, 77, 1);
 
 const Input = styled.div`
 margin-top: 0.5em;
-position: relative;
+border: 1px solid #D9D9D9;
+height: 30px;
+width: 250px;
+border-radius: 4px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-left: 5px;
+padding-right: 5px;
 input {
-    height: 30px;
-    width: 250px;
     font-family: galanogrotesque-r;
-    border: 1px solid #D9D9D9;
-    border-radius: 4px;
     outline: none;
+    height: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
 }
 img {
-    position: absolute;
+    cursor: pointer;
 }
 `;
 

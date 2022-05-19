@@ -13,6 +13,8 @@ box-shadow: rgba(26, 24, 30, 0.06);
 width: 100%;
 height: 80%;
 z-index: 99999;
+margin-bottom: 3em;
+margin-top: 5em;
 `;
 
 export const SloganSection: React.FC<SloganSectionProps> = () => {

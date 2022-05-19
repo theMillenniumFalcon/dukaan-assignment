@@ -5,11 +5,10 @@ import { SloganInput } from "../sloganinput/SloganInput";
 interface SloganSectionHeaderProps { }
 
 const HeaderComponent = styled.div`
-margin-top: 198px;
+padding-top: 3.5em;
 width: 65%;
 margin-left: auto;
 margin-right: auto;
-/* border: 1px solid black; */
 `;
 
 const Heading = styled.div`

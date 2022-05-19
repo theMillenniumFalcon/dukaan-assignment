@@ -5,12 +5,13 @@ interface ProductCardsProps { }
 
 const ProductCardsComponent = styled.div`
 margin-top: 2em;
-margin-bottom: 2em;
+padding-bottom: 2em;
 display: flex;
 flex-wrap: wrap;
 `;
 
 const Card = styled.div`
+cursor: pointer;
 height: 285px;
 width: 352px;
 margin-right: 19px;

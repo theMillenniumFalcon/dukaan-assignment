@@ -6,7 +6,7 @@ import { Wrapper } from "../wrapper/Wrapper";
 interface NavbarProps { }
 
 const NavbarComponent = styled.div`
-margin-top: 30px;
+padding-top: 30px;
 display: flex;
 align-items: center;
 justify-content: space-between;

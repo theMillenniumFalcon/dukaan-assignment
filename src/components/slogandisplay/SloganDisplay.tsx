@@ -7,12 +7,15 @@ interface SloganDisplayProps { }
 
 const SloganDisplayContainer = styled.div`
 margin-top: 30px;
-width: 65%;
+width: 85%;
 margin-left: auto;
 margin-right: auto;
 `;
 
 const Heading = styled.div`
+width: 77%;
+margin-left: auto;
+margin-right: auto;
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -42,10 +45,17 @@ color: #146EB4;
 
 const SloganResult = styled.div`
 margin-top: 30px;
+border: 1px solid black;
+`;
+
+const Slogans = styled.div`
+width: 77%;
 display: grid;
 grid-gap: 25px;
 gap: 25px;
 grid-template-columns: repeat(2, minmax(0, 1fr));
+margin-left: auto;
+margin-right: auto;
 `;
 
 const Result = styled.div`
@@ -79,13 +89,15 @@ export const SloganDisplay: React.FC<SloganDisplayProps> = () => {
                 <Button>Download All</Button>
             </Heading>
             <SloganResult>
-                {slogans.map((slogan) => !slogan ? null : (
-                    <Result key={slogan.id}
-                        onClick={() => navigator.clipboard.writeText(slogan.desc)}
-                    >
-                        {slogan.desc}
-                    </Result>
-                ))}
+                <Slogans>
+                    {slogans.map((slogan) => !slogan ? null : (
+                        <Result key={slogan.id}
+                            onClick={() => navigator.clipboard.writeText(slogan.desc)}
+                        >
+                            {slogan.desc}
+                        </Result>
+                    ))}
+                </Slogans>
             </SloganResult>
             <Horizontal />
             <SloganFooter />
