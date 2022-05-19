@@ -5,22 +5,11 @@ import { SloganInput } from "../sloganinput/SloganInput";
 interface SloganSectionHeaderProps { }
 
 const HeaderComponent = styled.div`
-padding-top: 3.5em;
+padding-top: 1px;
 width: 65%;
 margin-left: auto;
 margin-right: auto;
-`;
-
-const Heading = styled.div`
-font-family: galanogrotesque-s;
-font-size: 28px;
-`;
-
-const Desc = styled.p`
-font-family: galanogrotesque-r;
-color: rgba(77, 77, 77, 1);
-margin-top: 1em;
-font-size: 16px;
+padding-top: 3em;
 `;
 
 const Button = styled.div`
@@ -54,11 +43,6 @@ background-color: #D9D9D9;
 export const SloganSectionHeader: React.FC<SloganSectionHeaderProps> = () => {
     return (
         <HeaderComponent>
-            <Heading>Free Slogan maker</Heading>
-            <Desc>
-                {" Simply enter a name that describes your business, and get upto 1,000 "}
-                {" relevant slogans for free. "}
-            </Desc>
             <SloganInput />
             <Button>
                 <text>Generate slogans</text>
