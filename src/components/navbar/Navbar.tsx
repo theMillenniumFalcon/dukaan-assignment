@@ -7,7 +7,6 @@ interface NavbarProps { }
 
 const Container = styled.div`
 background-color: #146EB4;
-height: 45vh;
 `;
 
 const NavbarComponent = styled.div`

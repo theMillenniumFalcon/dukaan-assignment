@@ -45,7 +45,6 @@ color: #146EB4;
 
 const SloganResult = styled.div`
 margin-top: 30px;
-border: 1px solid black;
 `;
 
 const Slogans = styled.div`
@@ -81,6 +80,42 @@ color: #D9D9D9;
 background-color: #D9D9D9;
 `;
 
+const Click = styled.div`
+cursor: default;
+margin-top: 85px;
+margin-left: 5px;
+position: absolute;
+font-family: galanogrotesque-r;
+background: #4D4D4D;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #ffffff;
+border-radius: 4px;
+height: 28px;
+width: 100px;
+font-weight: 400;
+font-size: 14px;
+`;
+
+const Clicked = styled.div`
+cursor: default;
+margin-top: 160px;
+margin-left: 5px;
+position: absolute;
+font-family: galanogrotesque-r;
+background: #4D4D4D;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #ffffff;
+border-radius: 4px;
+height: 28px;
+width: 100px;
+font-weight: 400;
+font-size: 14px;
+`;
+
 export const SloganDisplay: React.FC<SloganDisplayProps> = () => {
     return (
         <SloganDisplayContainer>
@@ -89,6 +124,8 @@ export const SloganDisplay: React.FC<SloganDisplayProps> = () => {
                 <Button>Download All</Button>
             </Heading>
             <SloganResult>
+                <Click>Click to copy</Click>
+                <Clicked>Copied!</Clicked>
                 <Slogans>
                     {slogans.map((slogan) => !slogan ? null : (
                         <Result key={slogan.id}
